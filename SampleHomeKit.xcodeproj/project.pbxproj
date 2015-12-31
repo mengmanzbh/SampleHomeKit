@@ -17,6 +17,7 @@
 		D428901F1965D6A70028FA25 /* ServiceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D428901E1965D6A70028FA25 /* ServiceDetailsViewController.m */; };
 		D49C0CB5196526CA00BD0930 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49C0CB4196526CA00BD0930 /* HomeKit.framework */; };
 		D49C0CB81965390C00BD0930 /* AddNewAccesoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C0CB71965390C00BD0930 /* AddNewAccesoryViewController.m */; };
+		D5C2D32D1C34CD4F0068A736 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C2D32C1C34CD4F0068A736 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D49C0CB4196526CA00BD0930 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		D49C0CB61965390C00BD0930 /* AddNewAccesoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewAccesoryViewController.h; sourceTree = "<group>"; };
 		D49C0CB71965390C00BD0930 /* AddNewAccesoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewAccesoryViewController.m; sourceTree = "<group>"; };
+		D5C2D32C1C34CD4F0068A736 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				D428901D1965D6A70028FA25 /* ServiceDetailsViewController.h */,
 				D428901E1965D6A70028FA25 /* ServiceDetailsViewController.m */,
 				D4117462196522C900D34980 /* Main.storyboard */,
+				D5C2D32C1C34CD4F0068A736 /* Launch Screen.storyboard */,
 				D4117465196522C900D34980 /* Images.xcassets */,
 				D4117458196522C900D34980 /* Supporting Files */,
 			);
@@ -186,7 +189,7 @@
 				TargetAttributes = {
 					D4117454196522C900D34980 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = QNTLB4NUBK;
+						DevelopmentTeam = XNU37EDCXL;
 						SystemCapabilities = {
 							com.apple.HomeKit = {
 								enabled = 1;
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C2D32D1C34CD4F0068A736 /* Launch Screen.storyboard in Resources */,
 				D4117464196522C900D34980 /* Main.storyboard in Resources */,
 				D4117466196522C900D34980 /* Images.xcassets in Resources */,
 			);
@@ -318,7 +322,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "c7bbe3f0-fecb-457a-a207-21d12cfea8a7";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -354,7 +358,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "c7bbe3f0-fecb-457a-a207-21d12cfea8a7";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -370,6 +374,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SampleHomeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhishan.h5;
 				PRODUCT_NAME = HomeKitDemo;
 				PROVISIONING_PROFILE = "";
 			};
@@ -385,6 +390,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SampleHomeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhishan.h5;
 				PRODUCT_NAME = HomeKitDemo;
 				PROVISIONING_PROFILE = "";
 			};
