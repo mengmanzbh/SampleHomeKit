@@ -9,15 +9,26 @@
 #import "ViewController.h"
 #import "AddNewAccesoryViewController.h"
 #import "AccessoryDetailViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController (){
     NSMutableArray *accessories;
+    NSArray *actionSetA;
 }
             
 
 @end
 
 @implementation ViewController
+- (IBAction)addActionSet:(id)sender {
+    
+    HMActionSet *actionset = [self.homeManager.primaryHome.actionSets objectAtIndex:1];
+    NSLog(@"%@",actionset.name);
+    [self.homeManager.primaryHome executeActionSet:actionset completionHandler:^(NSError * _Nullable error) {
+        NSLog(@"OK");
+    }];
+
+}
             
 - (void)viewDidLoad {
     [super viewDidLoad];

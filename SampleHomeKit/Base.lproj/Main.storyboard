@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-7U-qnb">
                                 <rect key="frame" x="0.0" y="64" width="480" height="416"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newAccessoryCell" id="Kws-nC-jzY">
                                         <rect key="frame" x="0.0" y="49.5" width="480" height="44"/>
@@ -80,7 +80,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sh4-Gf-IKI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="accessoryCell" textLabel="e13-yP-MGP" detailTextLabel="8aM-aP-1Cc" style="IBUITableViewCellStyleValue1" id="lJP-id-xpJ">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
@@ -125,11 +125,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LRG-Nw-zEs">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="Add Home" id="U9q-G3-cZy">
                             <connections>
                                 <action selector="addHome:" destination="vXZ-lx-hvc" id="bjm-bJ-cY1"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pbz-M6-TRv">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="actionSet"/>
+                            <connections>
+                                <action selector="addActionSet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v9g-7j-BTf"/>
+                            </connections>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" title="Add Accessories" id="HOf-kN-PcW">
                             <connections>
                                 <segue destination="kZ3-m3-6ih" kind="popoverPresentation" identifier="addNewAccessory" popoverAnchorBarButtonItem="HOf-kN-PcW" id="Ia9-w5-3hn">
@@ -161,7 +170,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="smo-iZ-vC6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="accessoryDetailCell" textLabel="qU1-PC-X3T" detailTextLabel="675-x8-CIq" style="IBUITableViewCellStyleSubtitle" id="9LW-BV-eZb">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
@@ -234,7 +243,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Yqm-bf-pIW">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceDetailCell" textLabel="d3r-Bn-GbP" detailTextLabel="AwG-hU-SUu" style="IBUITableViewCellStyleSubtitle" id="RYp-24-gpV">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>

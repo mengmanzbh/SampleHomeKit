@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HomeKit/HomeKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSMutableDictionary *HomeKitUUIDs;
+@property (nonatomic, strong) HMHomeManager *homeManager;
 
 @end
 

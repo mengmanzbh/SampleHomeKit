@@ -9,9 +9,10 @@
 #import "AppDelegate.h"
 #import "ServiceDetailsViewController.h"
 
-@interface ServiceDetailsViewController (){
+@interface ServiceDetailsViewController ()
+{
     NSMutableArray *serviceCharacterstics;
-
+    NSArray *actionSetA;
 }
 
 @end
@@ -38,6 +39,9 @@
     serviceCharacterstics = [[NSMutableArray alloc] init];
 
     [self updateTableViewData];
+    
+    self.homeManager = [[HMHomeManager alloc] init];
+    self.homeManager.delegate = self;
 
 }
 
@@ -122,6 +126,20 @@
             }
         }];
     }
+    
+    
+    [self.homeManager.primaryHome addActionSetWithName:@"actionSetA" completionHandler:^(HMActionSet * _Nullable actionSet, NSError * _Nullable error) {
+        NSLog(@"添加动作集成功");
+        
+    }];
+    
+    HMActionSet *actionset = [self.homeManager.primaryHome.actionSets objectAtIndex:1];
+    HMCharacteristicWriteAction *writeActonA = [[HMCharacteristicWriteAction alloc] initWithCharacteristic:characteristic targetValue:@0];
+    [actionset addAction:writeActonA completionHandler:^(NSError * _Nullable error) {
+        
+    }];
+    NSLog(@"动作集的名称:%@",actionset.name);
+  
 }
 
 -(void)changeSliderValue:(id)sender {
@@ -150,6 +168,9 @@
 }
 
 -(void)changeCharacteristic:(HMCharacteristic*)characteristic atIndexPath:(NSIndexPath*)indexPath withValue:(NSNumber*)value {
+    
+    
+  
     
     [characteristic writeValue:value completionHandler:^(NSError *error){
         
@@ -245,6 +266,9 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"Celsius" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             
             [self changeCharacteristic:characteristic atIndexPath:indexPath withValue:@0];
+            
+            
+           
             
         }]];
         

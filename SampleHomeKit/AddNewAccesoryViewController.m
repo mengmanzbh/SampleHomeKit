@@ -35,6 +35,8 @@
     accessoryBrowser.delegate = self;
     
     newAccessories = [[NSMutableArray alloc] init];
+    
+   
 }
 
 - (void)didReceiveMemoryWarning
